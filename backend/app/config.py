@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     SENTRY_DSN: Optional[str] = None
     
     # CORS
-    CORS_ORIGINS=["https://alfalahacademycrm.vercel.app","http://localhost:5173","http://localhost:3000"]
+    CORS_ORIGINS: list = ["https://alfalahacademycrm.vercel.app","http://localhost:5173","http://localhost:3000"]
     
     class Config:
         env_file = ".env"
