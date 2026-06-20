@@ -27,7 +27,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8001/api',
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://alfalahacademycrm-4.onrender.com/api',
       stripeKey: process.env.NUXT_PUBLIC_STRIPE_KEY || ''
     }
   },
