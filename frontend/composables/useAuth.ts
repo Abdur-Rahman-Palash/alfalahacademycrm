@@ -107,10 +107,11 @@ export function useAuth() {
   
   const logout = async () => {
     try {
-      const config = useRuntimeConfig()
-      await $fetch(`${config.public.apiBase}/auth/logout`, {
-        method: 'POST'
-      })
+      // TEMPORARILY COMMENTED OUT - BACKEND ENDPOINT NOT IMPLEMENTED
+      // const config = useRuntimeConfig()
+      // await $fetch(`${config.public.apiBase}/auth/logout`, {
+      //   method: 'POST'
+      // })
     } catch (error) {
       console.error('Logout error:', error)
     } finally {
