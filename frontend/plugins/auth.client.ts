@@ -1,4 +1,5 @@
 export default defineNuxtPlugin(async () => {
-  const { initializeAuth } = useAuth()
-  await initializeAuth()
+  // TEMPORARILY COMMENTED OUT TO ALLOW DIRECT ACCESS WITHOUT AUTH
+  // const { initializeAuth } = useAuth()
+  // await initializeAuth()
 })
