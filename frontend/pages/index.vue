@@ -231,10 +231,11 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: 'auth',
-  requiredRole: 'read_only'
-})
+// TEMPORARILY DISABLED AUTH MIDDLEWARE
+// definePageMeta({
+//   middleware: 'auth',
+//   requiredRole: 'read_only'
+// })
 
 import Card from '~/components/ui/Card.vue'
 import Button from '~/components/ui/Button.vue'
