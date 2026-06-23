@@ -8,8 +8,9 @@ export default defineNuxtRouteMiddleware((to) => {
   // }
 
   // page এ requiredRole সেট করা থাকলে, role check করুন
-  const requiredRole = to.meta.requiredRole as string | undefined
-  if (requiredRole && !hasPermission(requiredRole)) {
-    return navigateTo('/unauthorized')
-  }
+  // TEMPORARILY COMMENTED OUT TO ALLOW DIRECT ACCESS
+  // const requiredRole = to.meta.requiredRole as string | undefined
+  // if (requiredRole && !hasPermission(requiredRole)) {
+  //   return navigateTo('/unauthorized')
+  // }
 })
